@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body{
+    background-image: url(../Styles/img/istockphoto-1337329904-170667a\(1\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.font{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.sombra2{
+    text-shadow: -12px 0px 0px #000000;
+}
+
+.gradient{
+    color: #dc9f18;
+    background-image: -webkit-linear-gradient(315deg, #fcad04 2%,#52abe8 89%,#24fddc 2%,#f7f278 38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.icon-scroll,
+.icon-scroll:before{
+    position: absolute;
+    left: 50%;
+}
+
+.icon-scroll{
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 70%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+
+.icon-scroll:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(46px);
+    }
+
+}
+
+.marg{
+    margin-top: 28em;
+}
