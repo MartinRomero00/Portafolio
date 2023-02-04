@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="stylesheet" href="/Styles/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title> Portafolio | Martin Romero | </title>
 </head>
 <body>
     
     <nav class="text-white w-full text-xl ">
-        <ul class=" flex flex-row justify-center gap-x-16 mt-5 text-center font ">
-            <a href="#inicio">
-                <li> Inicio </li>
-            </a>
-            <a href="#proyectos">
-                <li> Proyectos </li>
-            </a>
-            <a href="#habilidades">
-                <li> Habilidades </li>
-            </a>
-            <a href="#sobremi">
-                <li> Sobre Mi </li>
-            </a>
+        <ul class=" flex flex-row justify-center gap-x-16 mt-5 text-center font cursor-pointer">
+            <li class=""> Inicio </li>
+
+            <li> Proyectos </li>
+
+            <li> Habilidades </li>
+
+            <li> Sobre Mi </li>
+
             <button class="w-10" id="esp"> <img src="./Styles/img/Flag_of_Argentina.svg-1.webp" alt="argentina"> </button>
             <button class="w-10" id="ing"> <img src="/Styles/img/320px-Flag_of_the_United_States..png" alt="estados unidos"> </button>
         </ul>
@@ -36,15 +32,23 @@
     </div>
 
 
-
-    <div class="flex flex-col items-center justify-center text-center marg pb-14 w-full h-full">
-        <h3 class="text-5xl font-bold decoration-solid text-white sombra2 decoration-double underline decoration-2">Proyectos </h3>
+    <div class="relative flex py-5 items-center mt-96">
+        <div class="flex-grow border-t  border-amber-300"></div>
     </div>
-    <div class="grid grid-cols-3 place-items-center w-full h-10">
+    <div class="flex flex-col items-center justify-center text-center  pb-14 w-full h-full ">
+        <h3 class="text-3xl text-neutral-400"> <span class="text-6xl font-bold text-gray-300">P</span>ROYECTOS </h3>
+    </div>
+    <div class="grid grid-cols-3 place-items-center w-full ">
         <div class="text-white">1</div>
         <div class="text-white">2</div>
         <div class="text-white">3</div>
     </div>
+
+    <div class="flex flex-col items-center justify-center text-center pb-14 w-full h-full mt-20">
+        <h3 class="text-3xl text-neutral-400"> <span class="text-6xl font-bold text-gray-300">H</span>ABILIDADES </h3>
+    </div>
+
+
 
 
 </body>
