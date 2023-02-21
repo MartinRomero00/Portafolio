@@ -79,3 +79,9 @@ body{
 .marg{
     margin-top: 28em;
 }
+
+@media (max-width: 1023px){ 
+    .icon-scroll{
+        display: none;
+    }
+}
