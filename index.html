@@ -15,13 +15,15 @@
     
     <nav class="text-white  text-xl">
         <ul class="lg:flex lg:flex-row lg:justify-center lg:gap-x-16 lg:mt-5 lg:text-center font flex flex-col items-center justify-center gap-y-4 mt-5">
-            <li class="cursor-pointer"> Inicio </li>
+            <a href="#">
+                <li class="cursor-pointer" id="home"> Inicio </li>
+            </a>
 
-            <li class="cursor-pointer"> Proyectos </li>
+            <li class="cursor-pointer" id="project"> Proyectos </li>
 
-            <li class="cursor-pointer"> Habilidades </li>
+            <li class="cursor-pointer" id="skills"> Habilidades </li>
 
-            <li class="cursor-pointer"> Sobre Mi </li>
+            <li class="cursor-pointer" id="aboutme"> Sobre Mi </li>
 
             <button class="w-20 flex justify-center" id="esp"> <img class="w-14" src="./Styles/img/Flag_of_Argentina.svg-1.webp" alt="argentina"> </button>
             <button class="w-20 flex justify-center" id="ing"> <img class="w-14" src="/Styles/img/320px-Flag_of_the_United_States..png" alt="estados unidos"> </button>
@@ -30,7 +32,7 @@
 
 
     <div class="flex flex-col items-center mt-40  text-center text-xl ">
-        <h1 class="lg:text-8xl text-6xl my-2 gradient "> ¡Bienvenidos!</h1>
+        <h1 id="welcome" class="lg:text-8xl text-6xl my-2 gradient "> ¡Bienvenidos!</h1>
         <div class='icon-scroll'></div>
     </div>
 
@@ -39,7 +41,7 @@
         <div class="flex-grow border-t  border-amber-300"></div>
     </div>
     <div class="flex flex-col items-center justify-center text-center  pb-14 w-full h-full ">
-        <h3 class="text-3xl text-neutral-400"> <span class="text-6xl font-bold text-gray-300">P</span>ROYECTOS </h3>
+        <h3 id="displayproject" class="text-3xl text-neutral-400"> <span id="p" class="text-6xl font-bold text-gray-300">P</span>ROYECTOS </h3>
     </div>
     <div class="grid lg:auto-cols-auto lg:auto-rows-auto auto-rows-auto place-items-center w-full px-2">
         <div class="border-solid border-2">
@@ -52,7 +54,7 @@
     </div>
 
     <div class="flex flex-col items-center justify-center text-center pb-14 w-full h-full lg:mt-20 mt-28">
-        <h3 class="text-3xl text-neutral-400"> <span class="text-6xl font-bold text-gray-300">H</span>ABILIDADES </h3>
+        <h3 id="displayskills" class="text-3xl text-neutral-400"> <span id="h" class="text-6xl font-bold text-gray-300">H</span>ABILIDADES </h3>
     </div>
 
     <div class="grid grid-rows-2 gap-y-20 lg:gap-y-0 lg:grid-rows-none lg:grid-cols-2 justify-items-center">
@@ -94,19 +96,19 @@
                 <div class="flex-grow border-t  border-green-400"></div>
             </div>
             <ul class="text-start text-stone-300 font-mono">
-                <li class="text-2xl">
+                <li class="text-2xl" id="n1">
                     Perseverancia
                 </li>
-                <li class="text-2xl mt-4">
+                <li class="text-2xl mt-4" id="n2">
                     Entusiasmo
                 </li>
-                <li class="text-2xl mt-4">
+                <li class="text-2xl mt-4" id="n3">
                     Compañerismo
                 </li>
-                <li class="text-2xl mt-4">
+                <li class="text-2xl mt-4" id="n4">
                     Dedicacion
                 </li>
-                <li class="text-2xl mt-4">
+                <li class="text-2xl mt-4" id="n5">
                     Compromiso
                 </li>
             </ul>
@@ -114,7 +116,7 @@
     </div>
 
     <div class="flex flex-col items-center justify-center text-center pb-14 w-full h-full mt-20">
-        <h3 class="text-3xl text-neutral-400"> <span class="text-6xl font-bold text-gray-300">S</span>OBRE MI </h3>
+        <h3 id="displayaboutme" class="text-3xl text-neutral-400"> <span id="s" class="text-6xl font-bold text-gray-300">S</span>OBRE MI </h3>
     </div>
 
     <div class="2xl:max-w-7xl xl:max-w-5xl mx-auto px-6 p-20 border-double border-4 border-sky-400 mb-2">
@@ -126,10 +128,10 @@
         <div class="md:text-justify text-base xl:text-xl pt-5">
             <ul class="tracking-wide p-2 text-white leading-loose">
                 <li class="flex items-center gap-2">
-                    <span>Me apasiona y estoy en constante búsqueda y aprendizaje de nuevas tecnologías, realizando proyectos personales que aumenten mis conocimientos en el área.</span>
+                    <span id="a1">Me apasiona y estoy en constante búsqueda y aprendizaje de nuevas tecnologías, realizando proyectos personales que aumenten mis conocimientos en el área.</span>
                 </li>
                 <li class="flex items-center gap-2">
-                    <span>Me encuentro en la búsqueda de mi primera experiencia laboral en el campo de la programación de páginas web.</span>
+                    <span id="a2">Me encuentro en la búsqueda de mi primera experiencia laboral en el campo de la programación de páginas web.</span>
                 </li>
             </ul>
         </div>
@@ -154,6 +156,6 @@
 
 
 
-
+<script src="./app.js"></script>
 </body>
 </html>
